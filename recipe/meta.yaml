@@ -1,18 +1,18 @@
 {% set name = "fontpens" %}
-{% set version = "0.2.4" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fontPens-{{ version }}.zip
-  sha256: a6d9a14573b3450f3313d69523f9006028c21fc7aef5d35333b87aab7f2b41fd
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 037d32fc4209e434076c7b3257c790a8e106f388b3ff22ffcf608e28bcc18536
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
