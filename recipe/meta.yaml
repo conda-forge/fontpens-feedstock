@@ -18,10 +18,11 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
-    - fonttools >=3.32.0
+    - fonttools >=4.40
 
 test:
   imports:
