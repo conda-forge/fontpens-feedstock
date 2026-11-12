@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fontpens
-  version: "0.4.0"
+  version: "0.4.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 69be9a81087dd59f1b8dee3f1fc8f7cd4693980ab45852feb496cbb28fbd93cb
+  sha256: 4987bd820833ac25c1608752de2d95854f7b4247042b9e7e7cd7132ad0f72756
 
 build:
   number: 0
